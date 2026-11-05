@@ -1,5 +1,8 @@
 # 한국어 핵심 요약 · 원본
 
+[배포된 앱 열기](https://ko-summary-original.streamlit.app/~/+/) ·
+[GitHub 저장소](https://github.com/bgy030448/ko-summary)
+
 `app.py`는 원본 `ko_summary.ipynb`의 학습 결과를 사용하는 Streamlit 추론 화면입니다.
 v2 저장소와는 별개입니다. Python 3.12, 엔트리포인트 `app.py`, 브랜치 `main`을 사용합니다.
 
