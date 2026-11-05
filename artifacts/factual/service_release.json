@@ -1,0 +1,33 @@
+{
+  "status": "experimental_partial_improvement",
+  "adopted_in_app": true,
+  "use_initial_model": true,
+  "checkpoint": "../rewrite_decoder.safetensors",
+  "weights_sha256": "508166d61ca68bc857330778343ebd90bfbe187d27bb7699c707ddf7ac774f71",
+  "initial_generator_manifest_sha256": "1e656c5e279d24a48295441120bdccc5ae9efa29906508fcd67824004c2906db",
+  "generation_settings": {
+    "max_new_tokens": 112,
+    "min_new_tokens": 8,
+    "num_beams": 4,
+    "do_sample": false,
+    "no_repeat_ngram_size": 3,
+    "length_penalty": 1.1,
+    "num_return_sequences": 4,
+    "return_dict_in_generate": true,
+    "output_scores": true
+  },
+  "policy_version": "conservative_subject_context_v4",
+  "training_selection_sha256": "67a7c686719733b5699a9f518c029a58487cbd04b81cf332b0440b6f7b701eea",
+  "trained_candidate": {
+    "checkpoint": "lr_5e-05_epoch_1.safetensors",
+    "weights_sha256": "211c116d31a86411e483c9b8a714bc1e0f8512eecf50c7b93363cd54cf23ee00",
+    "learning_rate": 5e-05,
+    "epoch": 1,
+    "adopted": false
+  },
+  "evaluation_sha256": "48392109d4654a3c25ca753692b8bc3254825122fee72551dd2b04beb241bef3",
+  "review_sha256": "80562f3b0912729486fbc66d4307eee31d05d53143eb1fe0f63ea59d0de0c8e4",
+  "reason": "Extra training reduced validation loss slightly, but reduced ROUGE and introduced an actor error/coverage regressions. Keep original generator; adopt conservative repair as development mode.",
+  "scope": "32 reused development documents, AI-assisted source review; no independent final test",
+  "kaggle_executed": false
+}

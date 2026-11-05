@@ -1,0 +1,6 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+transformers==5.22.1
+safetensors==0.8.0
+streamlit==1.66.1
+pypdf==6.21.4

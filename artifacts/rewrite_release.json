@@ -1,0 +1,617 @@
+{
+  "status": "experimental",
+  "architecture": "frozen KoBART encoder + MLP sentence selector + existing fine-tuned KoBART generator",
+  "train_count": 256,
+  "tuning_count": 32,
+  "train_ids": [
+    "pair_f1b09af4b034a0b252a70e91",
+    "pair_66ca7c0a2f8ff0fdcf30c8f2",
+    "pair_6ff646596c8226040a1588a0",
+    "pair_0844e1f2f37d940fc7513877",
+    "pair_bc1cbf097f11682bc5729280",
+    "pair_6ea941564c5e1246c2386e28",
+    "pair_f624096dc79802444d7168bb",
+    "pair_ab21f61dbe40599a97946dbb",
+    "pair_3cbe4e17f57427125ed019f4",
+    "pair_c2f599886671de155169f073",
+    "pair_0ee07a7f4a55c5c68d5a423c",
+    "pair_cea4da986ea50e49a0c03589",
+    "pair_d6a18f454310390e5f554c78",
+    "pair_64094699969fcdb8ade24025",
+    "pair_154eb9cf42d3092ba609f237",
+    "pair_3a8b52c92c24bad157454520",
+    "pair_0384ae3e8f63bfdf8f763e7c",
+    "pair_3f6b36ea291063755c3f0984",
+    "pair_2e80927907df518e7dcb3bb3",
+    "pair_cbd1271e8b6f36a73b2ef793",
+    "pair_587f8d7f8406fc27b8b71268",
+    "pair_ccad5fc65a06d92557b5b05b",
+    "pair_36484bdcd452949d41442e5f",
+    "pair_119fdd3e3620f7dbb86f896a",
+    "pair_b7cfae557df2b2028d4bb090",
+    "pair_824c8e10ffd4d201d61c734a",
+    "pair_3a8714a9afacaa646c14b948",
+    "pair_01f189bf3a87e44510a4b3cd",
+    "pair_896e5c12f4e165642ebe20e6",
+    "pair_bd7807b0ca5852c57548a35b",
+    "pair_5173312a83bae1280a69ab14",
+    "pair_bed90dc35cc2aa6e128e39dd",
+    "pair_8f33f620ba024203d6ea39a8",
+    "pair_9a3984ca5380b3da65793b05",
+    "pair_6d52892f98e2e0c3efbd5e3a",
+    "pair_3288fe444295343c6b0e0f83",
+    "pair_5b4798d795b3a50fb6af871b",
+    "pair_715df67260c7d42c6794848e",
+    "pair_60a1f2f35924c0a4fe7edbb1",
+    "pair_e2713659a5a40c43a78aa761",
+    "pair_f9c1ba28c1be2a201d91bab2",
+    "pair_6c33ebf89f3e06413fcc8e4a",
+    "pair_43b7ecdcac52b0ab5de1b4b2",
+    "pair_192aeee512c66a6a3173ff31",
+    "pair_380015c134a170f5f721772e",
+    "pair_24974cf13becbef215040407",
+    "pair_3e3a6d2351bc2662da7a8a56",
+    "pair_87df1220ac28f020b42e8505",
+    "pair_1d6e5d3520eac53ec8352cdf",
+    "pair_3bc2ac2759f6f674fbc4d56f",
+    "pair_be258409895c9fee070b2a35",
+    "pair_1b9fcfdb3a814d09feb4eaa5",
+    "pair_3c4729f88f012154e930f7d8",
+    "pair_ecdb5567f03765d745450464",
+    "pair_b8890ae62d19dec1312f59b5",
+    "pair_3a50f9043897c25071f4e779",
+    "pair_36d56c04c4a0ba7995bb7bde",
+    "pair_e5247db6a7cac7668211c3a6",
+    "pair_affc58c4ff8998761efde9b1",
+    "pair_6085872aebd783f4fb405f0a",
+    "pair_0ea80e1921fa9af9bdae710a",
+    "pair_8f3ffff5536e342f04a5af93",
+    "pair_9a7f32eb1925c7e49b7a287b",
+    "pair_87c7a515781beaf007201bdc",
+    "pair_11ba269259ae7802ddbd79fb",
+    "pair_4f41a4f3cd8bedd49ef16850",
+    "pair_7502bacbc494c2e707b72ad3",
+    "pair_0a8aea9a4952564695ae76e3",
+    "pair_79f262d2450444b665bd2c0d",
+    "pair_c178710c399440f6eb5272c1",
+    "pair_e8d145e499f6daad0fbeaa0c",
+    "pair_adc7f908c4c3f55d9d308434",
+    "pair_d75d05988eb92161f8b05bf3",
+    "pair_445d8911881b3be3fb392592",
+    "pair_fb8afb80a792d6e38edb16a0",
+    "pair_e16533e4c4b462ce1b3dab49",
+    "pair_62184db5539be2ffc415e01e",
+    "pair_9e3671c8c1819f29f7d68be8",
+    "pair_ef65416cb5a66ccbacb02cc6",
+    "pair_7e2231092ef9374ac8ed8a51",
+    "pair_84c4a058e72326c1aa3de96a",
+    "pair_82e95baf2dca90b7a23b2f49",
+    "pair_e4cd97af7edf8ed5790dee65",
+    "pair_72abcec9135bd50463a6523c",
+    "pair_234aa9281b986efdaddbc734",
+    "pair_89b33a8b0c9f037a5db2c56f",
+    "pair_c2aa2d762f5805bd8ed543dc",
+    "pair_236b8f451509f6266eefcb35",
+    "pair_f239bda8dac7febe2a0b97fe",
+    "pair_fefc39f76fa0ff10c9883d02",
+    "pair_64dacf31211b73657168daea",
+    "pair_9c0ae21d7c8ac13799640e0c",
+    "pair_67f8059a1f47e2efa36930f9",
+    "pair_f8a38a29ef93ad4859d51cb5",
+    "pair_cc574ab7c2ddc167c17a63ac",
+    "pair_c08d8d11e56e390991cd1648",
+    "pair_1354821cd8d45cdae66a959e",
+    "pair_bc21b6dacac0ebb56126dfd9",
+    "pair_701c6d329f2f37c1393a18ee",
+    "pair_ff59da7230bda7d3e6a01e24",
+    "pair_a1593038fc0f19667898937d",
+    "pair_7793136327d8a9f4e63330a9",
+    "pair_ec776fb99a1dd3ac13196aa0",
+    "pair_bdf9fcb5d86462bb0308e18a",
+    "pair_4f44236f426b9bfb68555470",
+    "pair_73b2eb01937508872da7c148",
+    "pair_d207207c8c0ee2967eec31dd",
+    "pair_cb67e1bee0b2999881b751fe",
+    "pair_fbbce551fe0cf468d5ee7c10",
+    "pair_9648284f1794beb389377c3b",
+    "pair_0bb2c3a9b77da3c244703474",
+    "pair_507390940438a616e4f716f9",
+    "pair_bf239d98855cedae17e87f9b",
+    "pair_c9038cfdef0adfb5322df2f0",
+    "pair_abb397e8a7df638bd02e00cd",
+    "pair_b13727e7057ae41b8ee18882",
+    "pair_716614f4f089527b22204da7",
+    "pair_d44883d87792b1fa5dfc067c",
+    "pair_6ec6e16ee859697d0978b925",
+    "pair_e3e397a2d3b4299e220f2479",
+    "pair_d4ff4cc3c937d8276fb52114",
+    "pair_e0308579eee6d6dc443fc7b8",
+    "pair_c945ac1cd7896d1ca7dbce7c",
+    "pair_f9d473fc39a64cba96fc29a5",
+    "pair_2e4f8faaf4ecc16b456663e8",
+    "pair_51bf280f0eb0e138923f2b4c",
+    "pair_9735d59397803883bf8904f9",
+    "pair_e3043d96e9616d0033784092",
+    "pair_3a8bc441032571fd221b090b",
+    "pair_e2987cb80d55c653540b8d22",
+    "pair_2b6d86325f0181afa31cc212",
+    "pair_8c5dcabbff858b68c2df3a0b",
+    "pair_d9c3d9014b57f820b147cd15",
+    "pair_c72584a032662c4955204717",
+    "pair_4a6641bb2f90f285d4fe201c",
+    "pair_fad474de3977cb1d83b02804",
+    "pair_78114c868cc6c172a3d057dd",
+    "pair_300a6598c83d901cd8244519",
+    "pair_219f24ac5bef1d46b9e436b1",
+    "pair_4d3fe11ed7b43a0b9c106007",
+    "pair_d313435cd43789085cc046aa",
+    "pair_f09d0dcd3e4ad7bb0515357d",
+    "pair_c63c7d212de1ba8700d94cf0",
+    "pair_47bd6826f43c89db1461a234",
+    "pair_b4c2efed39173d91021d0bbc",
+    "pair_9040d5e3e6b525a802f1832f",
+    "pair_dc1752c0afbb6bd462bbcc1b",
+    "pair_5359a0507b340368f7233374",
+    "pair_aa66f53d2685ce7b9a7386b2",
+    "pair_09169585a85993834fd742c1",
+    "pair_9c322d58d250e34178003403",
+    "pair_052f06c7a7677bb94ee23eed",
+    "pair_1b49f7cd20e895eaf09bc960",
+    "pair_882af649a0d2f85fdc5ce97b",
+    "pair_298f0e4b5819eb47d1ce702d",
+    "pair_d50fa557c33cdab5fb8f46cf",
+    "pair_d929dc37098cfb17760df9ec",
+    "pair_6c5105b44f2ca5f6eaa6d289",
+    "pair_645a02450fb1dbf14d167a08",
+    "pair_f7f946fb58eb4d3497882763",
+    "pair_54544f7eedb1920d2d876e68",
+    "pair_6cdd079e67c34452a098bb80",
+    "pair_6382a05e3f7286dda5dea528",
+    "pair_4af3cf28c184eddcbc0d1912",
+    "pair_baf2ee772ffa56c65613cc70",
+    "pair_cd67e650fb013254f2a4b4fb",
+    "pair_76ffd1842181e3e25fe14431",
+    "pair_40e8949d75a445e4dc2806fa",
+    "pair_f739434a5ed1928fe1fc0a09",
+    "pair_761debe36e13e5e0cca42528",
+    "pair_fd7100dedd08b5adb55cfa97",
+    "pair_b6815d3459b47bfd8c50c695",
+    "pair_656af14f9b8a6198319e822c",
+    "pair_babeab0bdbff6202fc6829e9",
+    "pair_c34faa2090f198d422cc5bb3",
+    "pair_8ffcba0c5c5f478722a95fb8",
+    "pair_7b7d9e2e01408f9e85757455",
+    "pair_674d70c832ee702396ee246f",
+    "pair_4a38af1cd0e0c7ab83caf914",
+    "pair_d3ad0292882fe34ac46105be",
+    "pair_c63f47c0a97995c589e26947",
+    "pair_1166682691d0fe0b9a4be0df",
+    "pair_032ad7cf5136a8aeb62b8bca",
+    "pair_f6b24529d33e7b6f7d85099c",
+    "pair_26c8409067ff8bfca4619875",
+    "pair_95ac228bbced598bc445008d",
+    "pair_5e7fa4df16042a29c8acd471",
+    "pair_29d6eb9bbc7e1fa9abc81820",
+    "pair_0fa2259cb02b69457233dfd5",
+    "pair_4c2f7eb6004f7de8a30a0d9e",
+    "pair_fe487bff5be5a734e0245d40",
+    "pair_79402109c8c401ce403791e7",
+    "pair_cd32150399047d5908f57996",
+    "pair_c2c6b72186bf04ad9dce82ca",
+    "pair_97856638ef61f3c2c683bcd5",
+    "pair_7c007b139fbb85533898a096",
+    "pair_993042d07f094b93950a8abd",
+    "pair_2fc40b85203c9592cbfc333b",
+    "pair_ad80a09a471e1a3cf5ee18ac",
+    "pair_ef262fe07fd2947635475b9a",
+    "pair_612a49bb9b0ecf01ab814ebb",
+    "pair_499ca687bb8dcbc9bc27b019",
+    "pair_3b87d9f9c3c57ceb1a51f1b9",
+    "pair_32b6b8a35c8a6225912385a4",
+    "pair_421eefc7a436d99572dfffde",
+    "pair_0c642b98f4942f7cd05a76bd",
+    "pair_c55a6a21f3f442f9c532f258",
+    "pair_a1827a7c53795e6ba798bdce",
+    "pair_83cf250e456819f6b64dd0ea",
+    "pair_83553aba907fff0a5a0ae944",
+    "pair_31358d7326e6c078e66373e3",
+    "pair_d485a18d64d771a23c54e71f",
+    "pair_3a27ec9ba1beb58b7696f3c9",
+    "pair_3e9e84b5ace40a65bc1e760e",
+    "pair_055cd7e2ac85f7ef728fc107",
+    "pair_38373b0f68189e77d6804025",
+    "pair_7c299e3972cca8050f2361dc",
+    "pair_27e41e7f31d9f1e9d49b0693",
+    "pair_407a759cffae88bc4cbb0989",
+    "pair_792bd8a97f51ff4e10e9d870",
+    "pair_cd580533cba1d10394d2fcb2",
+    "pair_4dd9c75247cd23843b658c1a",
+    "pair_7828ed34e880c6a43763673b",
+    "pair_e7bf1f516b28430753e64408",
+    "pair_798325f15d560165d442a7b3",
+    "pair_92b37ee18c6de54e02d183e1",
+    "pair_42a35a0cfd2ceed4cbd22e08",
+    "pair_f424504794932b298e3ae2c6",
+    "pair_ebd9fda11bf0c2886acf520d",
+    "pair_7f32e6c0c87321c69ffc8461",
+    "pair_a17adf9e6ac6340510f99d81",
+    "pair_0ae6297bcbd59c4e9f5aff33",
+    "pair_2bfd8731e811b88546ace296",
+    "pair_330e88481a5b439f17b3fb5c",
+    "pair_585bed2f5ee6280820f6f131",
+    "pair_be0224fde9ea09d5e8c0f895",
+    "pair_bdceb71e089b14a957770b43",
+    "pair_66b7242c09c7967b97f1575f",
+    "pair_8b08dcd4c7bb533142cb0e74",
+    "pair_bc19ace7bacc2948c5d503e2",
+    "pair_55337f7e863facc37bfcc609",
+    "pair_9e16ae25b7685555c58472c1",
+    "pair_69b7fd81f5a8950b9f028644",
+    "pair_360adcf03b663e320c72e09d",
+    "pair_48262b54c46869590e2763bb",
+    "pair_bf09f940789103e1215d43fa",
+    "pair_9c2b33eb28f7a7608efa0623",
+    "pair_86c4e3d72a6d6568b1f5cedb",
+    "pair_50e4650d4f9d0495818eccf1",
+    "pair_8adfa9b630940d16ab57cbde",
+    "pair_613d4afb6e0451c520485672",
+    "pair_70f3b1263f922398882c9527",
+    "pair_cb663103b367fe5fe8cd7aa6",
+    "pair_a220595d320cef13464a811c",
+    "pair_1b82f1e93238602e05f21e4e",
+    "pair_3d39bafa4769efee8bd8c9f1"
+  ],
+  "tuning_ids": [
+    "pair_289cb995c45654c625835700",
+    "pair_02cf8ce0f4e8d69990d78321",
+    "pair_62304ab86fad312719831ad8",
+    "pair_d375ccd0d05394103e20efeb",
+    "pair_370be2ecf6cf75914b93ff62",
+    "pair_3760da2f7c9f47008e35f557",
+    "pair_5d45ab1c9374d5f673ab3917",
+    "pair_11dede7de79e7ca381d67696",
+    "pair_c6e8a92ae16919f4121dce83",
+    "pair_c21c8cfed901a54383470187",
+    "pair_b6bcf3305a47bc8a7991df5a",
+    "pair_712b9f79a5934e267632489f",
+    "pair_ac4978bc0ea61dbff3ac7d6d",
+    "pair_0f57d6e73ede8fd8b6ef4e89",
+    "pair_f68cd6aa0576d14947e08fd4",
+    "pair_217efa7e953fd3c13fd1b64c",
+    "pair_5b0bbdb39d87127940dcc990",
+    "pair_80a1d37a09d4536f3e8b301a",
+    "pair_2584d293c48da771704c5cb6",
+    "pair_181d2d023f0ec5cfb25ffb3e",
+    "pair_1ddc42966ed11b1e345c2e75",
+    "pair_a9e2062704a735bb323e528b",
+    "pair_1d5119d82a4c7ba6c55bad30",
+    "pair_251fbc37118fa9c5c30a8144",
+    "pair_e2dbb9faea5397bddfa2089d",
+    "pair_41205973280b96eb9f33a938",
+    "pair_aabc707a656fae0e8ca1205b",
+    "pair_412593479d43895183400fb7",
+    "pair_b439fce39fc4ea3769eebbce",
+    "pair_4ae3a6fc8bfa1aa3ac94387f",
+    "pair_8ea2fc12dbe978cf00501bdf",
+    "pair_5b7f34288a3efb221dce687e"
+  ],
+  "selector_sha256": "756d670fb9e37f9281eda08b672d603514f21fb97a47effd7e27e2bef9d63664",
+  "base_release_sha256": "f403463ac7a7fb476a99373dabe152752ff43ba249748ffbbd25cac58c14dad3",
+  "generation_settings": {
+    "max_new_tokens": 112,
+    "min_new_tokens": 8,
+    "num_beams": 4,
+    "do_sample": false,
+    "no_repeat_ngram_size": 3,
+    "length_penalty": 1.1
+  },
+  "max_document_tokens": 4096,
+  "max_evidence_tokens": 480,
+  "sentence_policy": "v2_terminal_punctuation_required_before_closing_quote",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9728434085845947,
+      "tuning_loss": 1.0035873651504517
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.9125714302062988,
+      "tuning_loss": 0.9876706600189209
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9197384715080261,
+      "tuning_loss": 1.0874426364898682
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.8209788203239441,
+      "tuning_loss": 0.9901713728904724
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.7961899638175964,
+      "tuning_loss": 1.0321749448776245
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.7648192048072815,
+      "tuning_loss": 1.0229120254516602
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.7371501326560974,
+      "tuning_loss": 1.0305111408233643
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.721512496471405,
+      "tuning_loss": 1.0789028406143188
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.70306795835495,
+      "tuning_loss": 1.0386844873428345
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.661175012588501,
+      "tuning_loss": 1.0634387731552124
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.645028293132782,
+      "tuning_loss": 1.133406639099121
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6212441325187683,
+      "tuning_loss": 1.1471036672592163
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.6045844554901123,
+      "tuning_loss": 1.0713337659835815
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.6047596335411072,
+      "tuning_loss": 1.1197786331176758
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.5604698657989502,
+      "tuning_loss": 1.1549476385116577
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.5679126381874084,
+      "tuning_loss": 1.2922040224075317
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.5237298011779785,
+      "tuning_loss": 1.147570013999939
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.575576663017273,
+      "tuning_loss": 1.41890549659729
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.499512255191803,
+      "tuning_loss": 1.1646344661712646
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.4903278648853302,
+      "tuning_loss": 1.3970264196395874
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.4482598602771759,
+      "tuning_loss": 1.272214412689209
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.42650410532951355,
+      "tuning_loss": 1.2805254459381104
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.4118945300579071,
+      "tuning_loss": 1.3810622692108154
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.40829262137413025,
+      "tuning_loss": 1.2919323444366455
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.384105920791626,
+      "tuning_loss": 1.3418030738830566
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.3711133897304535,
+      "tuning_loss": 1.3602919578552246
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.3607732653617859,
+      "tuning_loss": 1.5630360841751099
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.33868706226348877,
+      "tuning_loss": 1.5703779458999634
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.37000399827957153,
+      "tuning_loss": 1.400639295578003
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.31677255034446716,
+      "tuning_loss": 1.4670053720474243
+    },
+    {
+      "epoch": 31,
+      "train_loss": 0.29889413714408875,
+      "tuning_loss": 1.597782015800476
+    },
+    {
+      "epoch": 32,
+      "train_loss": 0.2887040078639984,
+      "tuning_loss": 1.5398955345153809
+    },
+    {
+      "epoch": 33,
+      "train_loss": 0.2786347568035126,
+      "tuning_loss": 1.7518140077590942
+    },
+    {
+      "epoch": 34,
+      "train_loss": 0.2621878385543823,
+      "tuning_loss": 1.6490023136138916
+    },
+    {
+      "epoch": 35,
+      "train_loss": 0.25941914319992065,
+      "tuning_loss": 1.628106951713562
+    },
+    {
+      "epoch": 36,
+      "train_loss": 0.2511046230792999,
+      "tuning_loss": 1.6603899002075195
+    },
+    {
+      "epoch": 37,
+      "train_loss": 0.23419424891471863,
+      "tuning_loss": 1.8676010370254517
+    },
+    {
+      "epoch": 38,
+      "train_loss": 0.2342713326215744,
+      "tuning_loss": 1.7575644254684448
+    },
+    {
+      "epoch": 39,
+      "train_loss": 0.2209942638874054,
+      "tuning_loss": 1.7032339572906494
+    },
+    {
+      "epoch": 40,
+      "train_loss": 0.20543494820594788,
+      "tuning_loss": 2.0118329524993896
+    },
+    {
+      "epoch": 41,
+      "train_loss": 0.20370762050151825,
+      "tuning_loss": 1.7625691890716553
+    },
+    {
+      "epoch": 42,
+      "train_loss": 0.1841990053653717,
+      "tuning_loss": 2.0023598670959473
+    },
+    {
+      "epoch": 43,
+      "train_loss": 0.1798953115940094,
+      "tuning_loss": 1.986009120941162
+    },
+    {
+      "epoch": 44,
+      "train_loss": 0.17455293238162994,
+      "tuning_loss": 1.9064399003982544
+    },
+    {
+      "epoch": 45,
+      "train_loss": 0.18608856201171875,
+      "tuning_loss": 2.3957889080047607
+    },
+    {
+      "epoch": 46,
+      "train_loss": 0.1659257560968399,
+      "tuning_loss": 1.9244345426559448
+    },
+    {
+      "epoch": 47,
+      "train_loss": 0.14933627843856812,
+      "tuning_loss": 2.14839243888855
+    },
+    {
+      "epoch": 48,
+      "train_loss": 0.1411268264055252,
+      "tuning_loss": 2.2035601139068604
+    },
+    {
+      "epoch": 49,
+      "train_loss": 0.13497565686702728,
+      "tuning_loss": 2.2445433139801025
+    },
+    {
+      "epoch": 50,
+      "train_loss": 0.14913038909435272,
+      "tuning_loss": 2.0038068294525146
+    },
+    {
+      "epoch": 51,
+      "train_loss": 0.12644915282726288,
+      "tuning_loss": 2.351771116256714
+    },
+    {
+      "epoch": 52,
+      "train_loss": 0.12966902554035187,
+      "tuning_loss": 2.0938005447387695
+    },
+    {
+      "epoch": 53,
+      "train_loss": 0.11541029065847397,
+      "tuning_loss": 2.3095932006835938
+    },
+    {
+      "epoch": 54,
+      "train_loss": 0.10985705256462097,
+      "tuning_loss": 2.2592904567718506
+    },
+    {
+      "epoch": 55,
+      "train_loss": 0.1057060956954956,
+      "tuning_loss": 2.553866147994995
+    },
+    {
+      "epoch": 56,
+      "train_loss": 0.1000085324048996,
+      "tuning_loss": 2.373628616333008
+    },
+    {
+      "epoch": 57,
+      "train_loss": 0.09564051032066345,
+      "tuning_loss": 2.383723258972168
+    },
+    {
+      "epoch": 58,
+      "train_loss": 0.08930269628763199,
+      "tuning_loss": 2.5532302856445312
+    },
+    {
+      "epoch": 59,
+      "train_loss": 0.08662579953670502,
+      "tuning_loss": 2.6967194080352783
+    },
+    {
+      "epoch": 60,
+      "train_loss": 0.08041631430387497,
+      "tuning_loss": 2.6436495780944824
+    }
+  ],
+  "best_epoch": 2,
+  "label_limit": "정답 요약과의 어절 유사도로 만든 약한 문장 라벨. 사람이 정한 중요도 정답이 아님.",
+  "long_document_limit": "긴 문서는 구간별 문맥으로 읽음. 576토큰을 넘는 문서의 요약 성능은 별도 검증 전.",
+  "test_used": false
+}

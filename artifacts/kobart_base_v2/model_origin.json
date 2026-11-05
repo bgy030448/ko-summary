@@ -1,0 +1,28 @@
+{
+  "repo_id": "gogamza/kobart-base-v2",
+  "revision": "f5899cc556216353e23ee36b66fad52b902066c5",
+  "source_url": "https://huggingface.co/gogamza/kobart-base-v2",
+  "downloaded_at": "2026-11-03T17:18:35+09:00",
+  "files": {
+    "README.md": {
+      "bytes": 5354,
+      "sha256": "1c458acf486a93f824bbd16aa1c0e320ed1a22055e4ada92a0c451cecfee3af0"
+    },
+    "config.json": {
+      "bytes": 1361,
+      "sha256": "0d1a77c4c24265d1909b4bf534c1f474707786ee90564a006a3bb36bb59c4412"
+    },
+    "model.safetensors": {
+      "bytes": 495468126,
+      "sha256": "0aa921ddfb94d56993ec1515d0eca263c8e298324136ac2ac11bc2dd95884cda"
+    },
+    "special_tokens_map.json": {
+      "bytes": 112,
+      "sha256": "29457480bfe72314a89a77b5c658b4e567332c1d4f28f1ec74c06b21b3c73242"
+    },
+    "tokenizer.json": {
+      "bytes": 682152,
+      "sha256": "bbe85e16994a829e07452d71988917678cf788aa6cc11d0b32d9533c0968f109"
+    }
+  }
+}

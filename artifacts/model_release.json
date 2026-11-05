@@ -1,0 +1,48 @@
+{
+  "selection_locked_before_test": true,
+  "selected_at": "2026-11-04T12:19:37.343721+09:00",
+  "model_directory": "artifacts/kobart_domain",
+  "weights_sha256": "94498d66339d5ebfb68015c5607b40f3b9ca5e11573fc1d4068758362554be75",
+  "generation_settings": {
+    "max_new_tokens": 64,
+    "min_new_tokens": 5,
+    "num_beams": 2,
+    "do_sample": false,
+    "no_repeat_ngram_size": 3,
+    "length_penalty": 1.0
+  },
+  "max_source_tokens": 576,
+  "evaluation_protocol_sha256": "e1392573d9d73521847d97162ec1e3f81f996b42785695fa43b4b5a00c139593",
+  "domain_plan_sha256": "38517ec09e0d655df34d92978139344b66692e96296005cfc358aa361341ca85",
+  "validation_report_sha256": "124606c979e6ee9b3943ca5f9b66adfd2af001d19c7b9b0592f48ce7a3711143",
+  "factual_review_sha256": "74d69fae961089f058a1bcac87718ff127789e48db388ac20aa37a4a7f827e68",
+  "quantitative_rule_passed": true,
+  "qualitative_rule_passed": true,
+  "review_counts": {
+    "before": {
+      "critical_error_documents": 3,
+      "key_omission_documents": 7,
+      "flags_by_type": {
+        "actor_error": 2,
+        "number_date_error": 0,
+        "status_relation_error": 1,
+        "key_omission": 7,
+        "repetition_grammar": 3
+      }
+    },
+    "after": {
+      "critical_error_documents": 1,
+      "key_omission_documents": 6,
+      "flags_by_type": {
+        "actor_error": 1,
+        "number_date_error": 0,
+        "status_relation_error": 0,
+        "key_omission": 6,
+        "repetition_grammar": 1
+      }
+    }
+  },
+  "test_data_read_for_selection": false,
+  "selection_reason": "검증 손실·문자 LCS가 개선되고 고정 8건의 중요 오류·핵심 누락이 늘지 않아 주제 선별 모델을 선택했습니다.",
+  "review_limit": "8건의 AI 보조 원문 대조이며 독립적인 사람 평가가 아닙니다."
+}

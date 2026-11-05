@@ -1,0 +1,158 @@
+{
+  "source_app_sha256": "a941bd63a230aff92445fc9ad9723a79067dfa8b8743f1c9df8dd52f561fcd9e",
+  "source_notebook_sha256": "afc1d7eb17fc3e8a0b58eba0cda952eb42f89f8afbddf0c7316062b49b5758d0",
+  "app_change": "Cloud processing caption only; inference unchanged",
+  "notebook_change": "Outputs, execution counts and execution metadata removed; all cell sources unchanged",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 136,
+      "sha256": "fd63f7ecb2d3d95c11a39a4fd95ffffca2ca5a8da42cf50be63d93b41810b8a4"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 99,
+      "sha256": "8049feb7e3cf8208769d5d390e4dfcf45a38dcd977f0d60f0fc981c3a5ebe587"
+    },
+    {
+      "path": ".streamlit/config.toml",
+      "bytes": 250,
+      "sha256": "4ac3862591f366da8a0117c31260cb354cbda9610d265cada63f5a35069746a9"
+    },
+    {
+      "path": "app.py",
+      "bytes": 51629,
+      "sha256": "da44029f31af5825a9b4bb60262978f6206d316d5415a67ed523ef32df70ca85"
+    },
+    {
+      "path": "artifacts/factual/service_release.json",
+      "bytes": 1565,
+      "sha256": "963d233ec1053ac82edd7dd97a4bc7e0d95a694f64748b94e410f2dea232e119"
+    },
+    {
+      "path": "artifacts/klue_nli/config.json",
+      "bytes": 926,
+      "sha256": "fb4b53cb02bcc11f75431cbccafc7747ef5bda1841b667c3e16133ab86a5dcde"
+    },
+    {
+      "path": "artifacts/klue_nli/pytorch_model.bin",
+      "bytes": 442560877,
+      "sha256": "f8d70a766c0561bcd7fbd115d82a559cfd6d235af6294b0ccf03828f2e09b3a0"
+    },
+    {
+      "path": "artifacts/klue_nli/README.md",
+      "bytes": 60,
+      "sha256": "69348d2deb2153c94190783e77611ad21cec5ff43e39d333a484150b0be4f8d8"
+    },
+    {
+      "path": "artifacts/klue_nli/special_tokens_map.json",
+      "bytes": 112,
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+    },
+    {
+      "path": "artifacts/klue_nli/tokenizer.json",
+      "bytes": 494860,
+      "sha256": "c0000d13c6b4136b2290abdd30bcf51c1c4d87353aa3c5d1640d003484516afe"
+    },
+    {
+      "path": "artifacts/klue_nli/tokenizer_config.json",
+      "bytes": 499,
+      "sha256": "d81945bbee12f1a93abeb55452542c449e0c41e3801109dbc339b1aa72483c83"
+    },
+    {
+      "path": "artifacts/klue_nli/vocab.txt",
+      "bytes": 248477,
+      "sha256": "aca2e1c1b22e58158b262d8ce417e570beb5d5213ab22011f85b0f70b282ddbb"
+    },
+    {
+      "path": "artifacts/kobart_base_v2/config.json",
+      "bytes": 1361,
+      "sha256": "0d1a77c4c24265d1909b4bf534c1f474707786ee90564a006a3bb36bb59c4412"
+    },
+    {
+      "path": "artifacts/kobart_base_v2/model_origin.json",
+      "bytes": 943,
+      "sha256": "7dfde64eb9ca49dd8836a27e77c7ed38babce6d4bac6585f7b82085b9efb963d"
+    },
+    {
+      "path": "artifacts/kobart_base_v2/README.md",
+      "bytes": 5354,
+      "sha256": "1c458acf486a93f824bbd16aa1c0e320ed1a22055e4ada92a0c451cecfee3af0"
+    },
+    {
+      "path": "artifacts/kobart_base_v2/special_tokens_map.json",
+      "bytes": 112,
+      "sha256": "29457480bfe72314a89a77b5c658b4e567332c1d4f28f1ec74c06b21b3c73242"
+    },
+    {
+      "path": "artifacts/kobart_base_v2/tokenizer.json",
+      "bytes": 682152,
+      "sha256": "bbe85e16994a829e07452d71988917678cf788aa6cc11d0b32d9533c0968f109"
+    },
+    {
+      "path": "artifacts/kobart_domain/config.json",
+      "bytes": 1488,
+      "sha256": "51d873af7fc9d3f55666888b6ffbfd2df02a66edafdc41e7a9dbef52d01d16a5"
+    },
+    {
+      "path": "artifacts/kobart_domain/generation_config.json",
+      "bytes": 369,
+      "sha256": "4faf5338248aba47532f35e68d3e894ae13a29f3e6e9093621497c0ceb8fbde8"
+    },
+    {
+      "path": "artifacts/kobart_domain/model.safetensors",
+      "bytes": 495589768,
+      "sha256": "94498d66339d5ebfb68015c5607b40f3b9ca5e11573fc1d4068758362554be75"
+    },
+    {
+      "path": "artifacts/model_release.json",
+      "bytes": 1850,
+      "sha256": "f403463ac7a7fb476a99373dabe152752ff43ba249748ffbbd25cac58c14dad3"
+    },
+    {
+      "path": "artifacts/rewrite_decoder.safetensors",
+      "bytes": 75620152,
+      "sha256": "508166d61ca68bc857330778343ebd90bfbe187d27bb7699c707ddf7ac774f71"
+    },
+    {
+      "path": "artifacts/rewrite_generator.json",
+      "bytes": 12490,
+      "sha256": "1e656c5e279d24a48295441120bdccc5ae9efa29906508fcd67824004c2906db"
+    },
+    {
+      "path": "artifacts/rewrite_release.json",
+      "bytes": 19047,
+      "sha256": "83ec19c9cdb60c39057bde708e5e540ee8098ad332cbe2d9e2ee83cbfbfcd7fa"
+    },
+    {
+      "path": "artifacts/rewrite_selector.pt",
+      "bytes": 606657,
+      "sha256": "756d670fb9e37f9281eda08b672d603514f21fb97a47effd7e27e2bef9d63664"
+    },
+    {
+      "path": "ko_summary.ipynb",
+      "bytes": 198523,
+      "sha256": "d78b52f565650637669ff112dade77e0ade30e404645454fb650071c915b9418"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1551,
+      "sha256": "baf1419ca5732b60da74a350f7be53320cdf4b2d9fce1042810e84708d22dcf0"
+    },
+    {
+      "path": "requirements-nlp.txt",
+      "bytes": 470,
+      "sha256": "3e6813474823541a886c6502b238c7b6a7aaa78870642b48c7ac97f4e41cdb60"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 147,
+      "sha256": "b4cd4389d0a5d94ade251f17f21c58e58e7630df77e57e744f8e6fb72a5c06f7"
+    },
+    {
+      "path": "test_news_preprocess.py",
+      "bytes": 1567,
+      "sha256": "882e074381e67089eab216ca73dd52313cf7a8f1f94a28db4b2d17915784b77a"
+    }
+  ]
+}
